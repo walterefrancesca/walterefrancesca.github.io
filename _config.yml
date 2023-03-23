@@ -1,0 +1,45 @@
+# site settings
+title: Walter & Francesca
+subtitle: 22 luglio 2023
+email: vitowalteranelli@gmail.com
+description: Il matrimonio del secolo.
+baseurl: "" # the subpath of your site, e.g. /blog
+#baseurl: "/forty-jekyll-theme" # the subpath of your site, e.g. /blog
+url: # the base hostname & protocol for your site
+author:
+street_address: Via Generale Dalla Chiesa 24/A
+city: Bari
+state: BA
+zip_code: 70124
+country: Italia
+phone: 3478961349
+
+# homepage tiles
+tiles-source: pages # accepts "posts" or "pages"
+tiles-count: 8
+
+# social settings (key must match name of font awesome icon)
+# see https://fontawesome.com/icons?d=gallery&p=2&s=brands
+# Icons are not shown if value is empty
+# You need to restart jekyll for changes to have an effect
+socials:
+  GitHub: https://github.com/andrewbanchich
+  GitLab:
+  Google-Plus: https://plus.google.com/u/0/+AndrewBanchich
+  Instagram:
+  LinkedIn: https://www.linkedin.com/in/andrew-banchich-a4ba1195
+  Twitter: https://twitter.com/andrewbanchich
+  Facebook:
+  Slack:
+
+# build settings
+markdown: kramdown
+
+sass:
+  style: compressed
+
+exclude:
+- "*.gemspec"
+- LICENSE.md
+- CONTRIBUTING.md
+- README.md

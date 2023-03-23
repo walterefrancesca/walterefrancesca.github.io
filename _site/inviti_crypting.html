@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<style>
+			html {
+								display: table;
+								margin: auto;
+						}
+			html,
+			body {
+				height: 100%;
+			}
+
+			body {
+				margin: 0;
+				background: #49a09d;
+				font-family: sans-serif;
+				font-weight: 100;
+			}
+
+			.container {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+
+			table {
+				width: 800px;
+				border-collapse: collapse;
+				overflow: hidden;
+				box-shadow: 0 0 20px rgba(0,0,0,0.1);
+			}
+
+			th,
+			td {
+				padding: 15px;
+				background-color: rgba(255,255,255,0.2);
+				color: #fff;
+			}
+
+			th {
+				text-align: left;
+			}
+
+			thead {
+				th {
+					background-color: #55608f;
+				}
+			}
+
+			tbody {
+				tr {
+					&:hover {
+						background-color: rgba(255,255,255,0.3);
+					}
+				}
+				td {
+					position: relative;
+					&:hover {
+						&:before {
+							content: "";
+							position: absolute;
+							left: 0;
+							right: 0;
+							top: -9999px;
+							bottom: -9999px;
+							background-color: rgba(255,255,255,0.2);
+							z-index: -1;
+						}
+					}
+				}
+			}
+		</style>
+  </head>
+
+  <body>
+		<center>
+		<a href="/partecipazioni_crypting.html" style="margin-bottom:1em; margin-top:1em;">Vai alle partecipazioni</a><br />
+    <button id="create" style="margin-bottom:1em;margin-top:1em;">Create file</button> <a download="inviti_enc.js" id="downloadlink" style="display: none; margin-bottom:1em;">Download</a>
+		</center>
+    <div id="table_div"></div>
+    <script type="text/javascript" src="assets/revealjs/lista_inviti.js"></script>
+    <script type="text/javascript" src="assets/revealjs/inviti_enc.js"></script>
+    <script src="https://bitwiseshiftleft.github.io/sjcl/sjcl.js"></script>
+		<!--<script>
+			const queryString = window.location.search;
+
+			const urlParams = new URLSearchParams(queryString);
+
+			const code = urlParams.get('code')
+			const seed = parseInt(urlParams.get('seed'))
+
+			var dec = sjcl.decrypt(code, mydata[seed] )
+			window.onload = function(){
+
+			    document.getElementById('code').innerHTML = dec;
+			};
+		</script>-->
+    <script>
+      const enc_list = []
+      for (const [seed, v] of my_load.entries()) {
+        var code = v[1];
+        var message = v[0];
+        var enc = sjcl.encrypt(code, message )
+        console.log(seed, v);
+        console.log(String(enc));
+        enc_list.push("'"+String(enc)+"'");
+      }
+
+      window.onload = function(){
+
+          document.getElementById('code').innerHTML = enc;
+      };
+    </script>
+		<script>
+
+      (function () {
+        var textFile = null,
+          makeTextFile = function (text) {
+            var data = new Blob([text], {type: 'text/plain'});
+
+            // If we are replacing a previously generated file we need to
+            // manually revoke the object URL to avoid memory leaks.
+            if (textFile !== null) {
+              window.URL.revokeObjectURL(textFile);
+            }
+
+            textFile = window.URL.createObjectURL(data);
+
+            return textFile;
+          };
+
+
+          var create = document.getElementById('create'),
+            textbox = document.getElementById('textbox');
+
+          create.addEventListener('click', function () {
+            var link = document.getElementById('downloadlink');
+            //link.href = makeTextFile(textbox.value);
+            link.href = makeTextFile("const mydata = [" + enc_list + "];");
+            link.style.display = 'block';
+          }, false);
+        })();
+		</script>
+    <script>
+      function createTable(tableData) {
+        var table = document.createElement('table');
+				var tableHeader = document.createElement('thead');
+				tableHeader.innerHTML = "    <tr><th scope=\"col\">Messaggio</th><th scope=\"col\">Indice</th><th scope=\"col\">Codice</th><th scope=\"col\">Link</th></tr>";
+				table.appendChild(tableHeader)
+        var tableBody = document.createElement('tbody');
+
+        for (const [seed, v] of tableData.entries()) {
+          var code = v[1];
+          var message = v[0];
+          var row = document.createElement('tr');
+          var cell0 = document.createElement('td');
+          cell0.appendChild(document.createTextNode(message));
+          var cell1 = document.createElement('td');
+          cell1.appendChild(document.createTextNode(seed));
+          var cell2 = document.createElement('td');
+          cell2.appendChild(document.createTextNode(code));
+          var cell3 = document.createElement('td');
+          cell3.innerHTML = "<a target=_blank href=\"/invito.html?code=" + code + "&seed=" + seed + "\">" + "/invito.html?code=" + code + "&seed=" + seed + "</a>";
+          row.appendChild(cell0);
+          row.appendChild(cell1);
+          row.appendChild(cell2);
+          row.appendChild(cell3);
+          tableBody.appendChild(row);
+        }
+        table.appendChild(tableBody);
+        var table_div = document.getElementById('table_div');
+        table_div.appendChild(table);
+
+
+        /*
+        my_load.forEach(function(rowData) {
+          var row = document.createElement('tr');
+
+          rowData.forEach(function(cellData) {
+            var cell = document.createElement('td');
+            cell.appendChild(document.createTextNode(cellData));
+            row.appendChild(cell);
+          });
+
+          tableBody.appendChild(row);
+        });
+
+        table.appendChild(tableBody);
+        document.body.appendChild(table);
+        */
+      }
+
+      window.onload = function(){
+        createTable(my_load);
+
+      };
+    </script>
+
+
+	</body>
+</html>

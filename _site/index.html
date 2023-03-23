@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Home | Walter & Francesca</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-title" content="Walter e Francesca" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/android-chrome-192x192.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/assets/favicon/site.webmanifest">
+	<link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#353b3d">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileImage" content="/assets/favicon/mstile-144x144.png">
+	<meta name="theme-color" content="#889C82">
+	<!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="/assets/css/main.css" />
+	<!--[if lte IE 9]><link rel="stylesheet" href="/assets/css/ie9.css" /><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
+</head>
+
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jul 22, 2023 10:30:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Output the result in an element with id="demo"
+  //document.getElementById("Timer").innerHTML = "Mancano <font style='color: #3F4A3C;'>" + days + "</font> giorni <font style='color: #3F4A3C;'>" + hours + "</font> ore <font style='color: #3F4A3C;'>" + minutes + "</font> minuti <font style='color: #3F4A3C;'>" + seconds + "</font> secondi ";
+  //document.getElementById("Timer").innerHTML = "<font style='color: #3F4A3C;'>Mancano <font style='color: #fff;'>" + days + "</font> giorni <font style='color: #fff;'>" + hours + "</font> ore <font style='color: #fff;'>" + minutes + "</font> minuti <font style='color: #fff;'>" + seconds + "</font> secondi </font>";
+  document.getElementById("Timer").innerHTML = "Mancano <font style='color: #fff;'>" + days + " giorni</font> " + hours + " ore " + minutes + " minuti " + seconds + " secondi ";
+
+  // If the count down is over, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("Timer").innerHTML = "Sono passati <font style='color: #fff;'>" + days + " giorni</font> " + hours + " ore " + minutes + " minuti " + seconds + " secondi ";
+  }
+}, 1000);
+</script>
+
+<body>
+
+    <!-- Wrapper -->
+<div id="wrapper">
+
+<!-- Header -->
+<header id="header" class="alt">
+	<a href="http://10.74.0.87:4000//" class="logo"><strong>Walter & Francesca</strong> <span>22 luglio 2023</span></a>
+	<nav>
+		<a href="#menu">Menu</a>
+	</nav>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+	<ul class="links">
+						<li><a href="/00-salva_home.html">Salva sul telefono</a></li>
+        
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		        <li><a href="http://10.74.0.87:4000//">Home</a></li>
+	    	
+		
+		    
+		
+		    
+		
+		
+		    
+		
+		    
+		        <li><a href="http://10.74.0.87:4000/0-cerimonia.html">Cerimonia</a></li>
+		    
+		
+		    
+		
+		    
+		        <li><a href="http://10.74.0.87:4000/1-ricevimento.html">Ricevimento</a></li>
+		    
+		
+		    
+		        <li><a href="http://10.74.0.87:4000/2-rsvp.html">Rispondi all'invito</a></li>
+		    
+		
+		    
+		
+		    
+		        <li><a href="http://10.74.0.87:4000/3-lista_nozze.html">Lista Nozze</a></li>
+		    
+		
+		    
+		        <li><a href="http://10.74.0.87:4000/4-accommodation.html">Dove Dormire</a></li>
+		    
+		
+		    
+		
+		    
+		        <li><a href="http://10.74.0.87:4000/5-album.html">Album fotografico</a></li>
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+	</ul>
+	<!--<ul class="actions vertical">
+		<li><a href="#" class="button special fit">Get Started</a></li>
+		<li><a href="#" class="button fit">Log In</a></li>
+	</ul>-->
+</nav>
+
+
+    <!-- Banner -->
+    <section id="banner" class="major">
+        <div class="inner">
+            <header class="major">
+                <h1>Walter & Francesca</h1>
+            </header>
+            <div class="content" style="margin: 0 0 0 0;">
+                <p style="text-transform: uppercase;">Il matrimonio del secolo.</p>
+                <!--<ul class="actions">
+                    <li><a href="#one" class="button next scrolly">Get Started</a></li>
+                </ul>-->
+            </div>
+            <div class="content">
+                <p style="text-transform: uppercase; color: #3F4A3C;" id="Timer"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main -->
+    <div id="main">
+
+        <!-- One -->
+        
+<section id="one" class="tiles">
+  
+  <article>
+    <span class="image">
+      <img src="assets/images/chiesa_madonna_di_lourdes_bari.jpeg" alt="Cerimonia" />
+    </span>
+    <header class="major">
+      <h3><a href="/0-cerimonia.html" class="link">Cerimonia</a></h3>
+      <p>Una nuova vita comincia qui, in questa cerimonia speciale</p>
+    </header>
+  </article>
+  
+  <article>
+    <span class="image">
+      <img src="assets/images/tenuta_menelao.jpeg" alt="Ricevimento" />
+    </span>
+    <header class="major">
+      <h3><a href="/1-ricevimento.html" class="link">Ricevimento</a></h3>
+      <p>Mangia, bevi, balla e celebriamo l'amore con una festa indimenticabile</p>
+    </header>
+  </article>
+  
+  <article>
+    <span class="image">
+      <img src="assets/images/letter.jpeg" alt="Rispondi all'invito" />
+    </span>
+    <header class="major">
+      <h3><a href="/2-rsvp.html" class="link">Rispondi all'invito</a></h3>
+      <p>Conferma la tua presenza e condividi con noi il nostro giorno speciale</p>
+    </header>
+  </article>
+  
+  <article>
+    <span class="image">
+      <img src="assets/images/lista-nozze.png" alt="Lista Nozze" />
+    </span>
+    <header class="major">
+      <h3><a href="/3-lista_nozze.html" class="link">Lista Nozze</a></h3>
+      <p>Aiutaci a creare ricordi indimenticabili</p>
+    </header>
+  </article>
+  
+  <article>
+    <span class="image">
+      <img src="assets/images/suite.jpeg" alt="Dove Dormire" />
+    </span>
+    <header class="major">
+      <h3><a href="/4-accommodation.html" class="link">Dove Dormire</a></h3>
+      <p>Goditi il nostro giorno speciale senza pensieri sul dover guidare</p>
+    </header>
+  </article>
+  
+  <article>
+    <span class="image">
+      <img src="assets/images/photo_album.jpeg" alt="Album fotografico" />
+    </span>
+    <header class="major">
+      <h3><a href="/5-album.html" class="link">Album fotografico</a></h3>
+      <p>Un tesoro di immagini che ci porteremo nel cuore per sempre. Invia le tue foto! La tua foto potrebbe essere il ricordo più bello del nostro matrimonio</p>
+    </header>
+  </article>
+  
+</section>
+
+
+
+    </div>
+
+
+
+<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<ul class="icons">
+				
+					
+						<li>
+							<a href="https://github.com/andrewbanchich" class="icon alt fa-github" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+								<span class="label">GitHub</span>
+							</a>
+						</li>
+					
+				
+					
+				
+					
+						<li>
+							<a href="https://plus.google.com/u/0/+AndrewBanchich" class="icon alt fa-google-plus" target="_blank" rel="noopener noreferrer" aria-label="Google-Plus">
+								<span class="label">Google-Plus</span>
+							</a>
+						</li>
+					
+				
+					
+				
+					
+						<li>
+							<a href="https://www.linkedin.com/in/andrew-banchich-a4ba1195" class="icon alt fa-linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+								<span class="label">LinkedIn</span>
+							</a>
+						</li>
+					
+				
+					
+						<li>
+							<a href="https://twitter.com/andrewbanchich" class="icon alt fa-twitter" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+								<span class="label">Twitter</span>
+							</a>
+						</li>
+					
+				
+					
+				
+					
+				
+			</ul>
+			<ul class="copyright">
+				<li>&copy; Walter & Francesca 22 luglio 2023</li>
+				<li>Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a></li>
+				<li>Jekyll integration: <a href="http://andrewbanchi.ch" target="_blank">Andrew Banchich</a></li>
+
+			</ul>
+		</div>
+	</footer>
+
+</div>
+
+<!-- Scripts -->
+	<script src="http://10.74.0.87:4000/assets/js/jquery.min.js"></script>
+	<script src="http://10.74.0.87:4000/assets/js/jquery.scrolly.min.js"></script>
+	<script src="http://10.74.0.87:4000/assets/js/jquery.scrollex.min.js"></script>
+	<script src="http://10.74.0.87:4000/assets/js/skel.min.js"></script>
+	<script src="http://10.74.0.87:4000/assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="http://10.74.0.87:4000/assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="http://10.74.0.87:4000/assets/js/main.js"></script>
+
+</body>
+
+</html>
