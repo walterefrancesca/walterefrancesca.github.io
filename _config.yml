@@ -3,7 +3,7 @@ title: Walter & Francesca
 subtitle: 22 luglio 2023
 email: vitowalteranelli@gmail.com
 description: Il matrimonio del secolo.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/wedding-site" # the subpath of your site, e.g. /blog
 #baseurl: "/forty-jekyll-theme" # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
 author:
