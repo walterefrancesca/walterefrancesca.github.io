@@ -39,12 +39,12 @@
 							<img src="assets/revealjs/images/monogram.png" alt="reveal.js logo" style="height: 10em; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
 						</a>
 						<!--<h3 >The HTML Presentation Framework</h3>-->
-						<p style="font-family: 'Great Vibes', cursive; font-size:2em;" id="code">Gentilissimi</p>
+						<p style="font-family: 'Great Vibes', cursive; font-size:2em;" id="code"></p>
 						<!--<p>
 							<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> and <a href="https://github.com/hakimel/reveal.js/graphs/contributors">contributors</a></small>
 						</p>-->
 					</section>
-					<section data-transition="convex">
+					<section class="show_hide" data-transition="convex">
 						<style>
 								.leftbox {
 										float:left;
@@ -74,7 +74,7 @@
 							con gioia annunciano il loro matrimonio <br />che sarà celebrato il 22 luglio 2023<br />alle ore 10:30 <br />presso la <a href="/0-cerimonia-part.html" target=_blank>C<u>hiesa Madonna di Lourdes</u></a> <br />a Parchitello
 						</p>
 					</section>
-					<section data-transition="convex">
+					<section class="show_hide" data-transition="convex">
 						<p style="font-family: 'Great Vibes', cursive; font-size:1.5em; margin-bottom:0.7em;">
 							Se desiderate inviarci un pensiero,<br />ve ne siamo grati e vi lasciamo<br />i nostri riferimenti sperando di fare cosa gradita<br />
 						</p>
@@ -96,6 +96,40 @@
 		<script src="assets/revealjs/plugin/search/search.js"></script>
 		<script src="assets/revealjs/plugin/markdown/markdown.js"></script>
 		<script src="assets/revealjs/plugin/highlight/highlight.js"></script>
+
+
+		<script type="text/javascript" src="assets/revealjs/partecipazioni_enc.js"></script>
+		<script src="https://bitwiseshiftleft.github.io/sjcl/sjcl.js"></script>
+		<script>
+			const queryString = window.location.search;
+
+			const urlParams = new URLSearchParams(queryString);
+
+			const code = urlParams.get('code');
+			const seed = parseInt(urlParams.get('seed'));
+			var check = true;
+
+			try {
+				var dec = sjcl.decrypt(code, mydata[seed] );
+				window.onload = function(){
+
+						document.getElementById('code').innerHTML = dec;
+				};
+			}
+			catch(err) {
+				var check = false;
+
+			}
+			/*var dec = sjcl.decrypt(code, mydata[seed] )
+			window.onload = function(){
+
+					document.getElementById('code').innerHTML = dec;
+			};*/
+			if(check == false) {
+				for (let el of document.querySelectorAll('.show_hide')) el.setAttribute("data-visibility","hidden");
+
+			}
+		</script>
 
 		<script src="assets/revealjs/js/ua-parser.js"></script>
 
@@ -154,22 +188,6 @@
 		});
 		}
 
-		</script>
-		<script type="text/javascript" src="assets/revealjs/partecipazioni_enc.js"></script>
-		<script src="https://bitwiseshiftleft.github.io/sjcl/sjcl.js"></script>
-		<script>
-			const queryString = window.location.search;
-
-			const urlParams = new URLSearchParams(queryString);
-
-			const code = urlParams.get('code')
-			const seed = parseInt(urlParams.get('seed'))
-
-			var dec = sjcl.decrypt(code, mydata[seed] )
-			window.onload = function(){
-
-			    document.getElementById('code').innerHTML = dec;
-			};
 		</script>
 		<script>
 			//var mydata = JSON.parse(data);
