@@ -20,7 +20,7 @@ document.getElementById("add_message").innerHTML =
         class="g-recaptcha"
         data-sitekey="6LfukwIlAAAAAHEhwjp6bn-Brei5HsdjQvweoISt"
         data-callback='onSubmit'
-        data-action='submit'>Mostra i dettagli del conto corrente</button>
+        data-action='submit'>Mostra i dettagli bancari</button>
 <div id='add_message'></div>
 
 <!--
