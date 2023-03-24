@@ -12,7 +12,7 @@ city: Bari
 state: BA
 zip_code: 70124
 country: Italia
-phone: 3478961349
+phone: 
 
 # homepage tiles
 tiles-source: pages # accepts "posts" or "pages"
@@ -23,12 +23,12 @@ tiles-count: 8
 # Icons are not shown if value is empty
 # You need to restart jekyll for changes to have an effect
 socials:
-  GitHub: https://github.com/andrewbanchich
+  GitHub:
   GitLab:
-  Google-Plus: https://plus.google.com/u/0/+AndrewBanchich
+  Google-Plus:
   Instagram:
-  LinkedIn: https://www.linkedin.com/in/andrew-banchich-a4ba1195
-  Twitter: https://twitter.com/andrewbanchich
+  LinkedIn:
+  Twitter:
   Facebook:
   Slack:
 
