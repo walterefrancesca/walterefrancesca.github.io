@@ -8,6 +8,8 @@ nav-menu: true
 
 Ti chiediamo di dedicare due minuti del tuo tempo a compilare queste poche domande per farci sapere se potrai partecipare e per garantirti la migliore esperienza possibile.
 
+Ti chiediamo di confermare la tua presenza **non oltre sabato 16 giugno**.
+
 <form action="https://docs.google.com/forms/d/e/1FAIpQLSf9Aj3U5US2e1J3kWmEFwQKR0sBOFfGs6Hyia19MBiaQ6Dm0g/formResponse">
     <!-- Break -->
     <div class="4u 12u$(small)">
