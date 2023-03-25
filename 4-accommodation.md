@@ -6,10 +6,7 @@ image: assets/images/suite.jpeg
 nav-menu: true
 ---
 
-Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
-Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat.
-Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris.
-Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.
+Goditi il nostro giorno speciale senza pensieri sul dover guidare. 
 
 
 <div class="table-wrapper">
@@ -38,7 +35,7 @@ Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellen
   			</tr>
   			<tr>
   				<td colspan="2">
-            <div class="airbnb-embed-frame" data-id="24991158" data-view="home" data-hide-reviews="true" style="width:450px;height:300px;"><a href="https://www.airbnb.it/rooms/24991158?check_in=2023-07-22&amp;check_out=2023-07-23&amp;guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget" rel="nofollow">Visto su Airbnb</a><a href="https://www.airbnb.it/rooms/24991158?check_in=2023-07-22&amp;check_out=2023-07-23&amp;guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget" rel="nofollow">Pietranuova</a><script async="" src="https://www.airbnb.it/embeddable/airbnb_jssdk"></script></div>
+            <div class="airbnb-embed-frame" data-id="24991158" data-view="home" data-hide-reviews="true" style="height:300px;"><a href="https://www.airbnb.it/rooms/24991158?check_in=2023-07-22&amp;check_out=2023-07-23&amp;guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget" rel="nofollow">Visto su Airbnb</a><a href="https://www.airbnb.it/rooms/24991158?check_in=2023-07-22&amp;check_out=2023-07-23&amp;guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget" rel="nofollow">Pietranuova</a><script async="" src="https://www.airbnb.it/embeddable/airbnb_jssdk"></script></div>
           </td>
   			</tr>
   		</tbody>
