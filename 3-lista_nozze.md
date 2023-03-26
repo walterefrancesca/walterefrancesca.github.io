@@ -73,7 +73,7 @@ label img {
   z-index: -1;
 }
 
-ul li {
+ul, li, label {
     padding-left: 0.0em;
     margin: 0em;
 }

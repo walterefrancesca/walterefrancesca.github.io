@@ -7,8 +7,33 @@ nav-menu: true
 ---
 
 
-Dopo la cerimonia religiosa, Walter e Francesca festeggeranno con amici e parenti presso Villa Menelao:
+Dopo la cerimonia religiosa, Walter e Francesca festeggeranno con amici e parenti presso
 
+<div class="table-wrapper">
+  <h4>Villa Menelao</h4>
+  <table class="alt">
+  		<tbody>
+  			<tr>
+  				<td>Indirizzo</td>
+  				<td>Strada Provinciale Turi - Rutigliano, Km 2, 70010 Turi BA</td>
+  			</tr>
+  			<tr>
+  				<td>Telefono</td>
+  				<td>0808916687</td>
+  			</tr>
+  			<tr>
+  				<td>Sito web</td>
+  				<td><a href="http://www.villamenelao.it/" target=_blank></a>Villa Menelao - sito web</td>
+  			</tr>
+  			<tr>
+  				<td>Link Navigatore</td>
+  				<td><a href="https://goo.gl/maps/7FJZubkwgEZtKmgR6" target=_blank>Villa Menelao - indicazioni stradali con Google Maps</a></td>
+  			</tr>
+  		</tbody>
+  	</table>
+</div>
+
+<!--
 Indirizzo: Strada Provinciale Turi - Rutigliano, Km 2, 70010 Turi BA
 
 Telefono: 0808916687
@@ -16,7 +41,7 @@ Telefono: 0808916687
 
 [Villa Menelao - sito web](http://www.villamenelao.it/)
 
-[Villa Menelao - indicazioni stradali con Google Maps](https://goo.gl/maps/7FJZubkwgEZtKmgR6)
+[Villa Menelao - indicazioni stradali con Google Maps](https://goo.gl/maps/7FJZubkwgEZtKmgR6)-->
 
 Ti chiediamo di confermare la tua presenza **non oltre sabato 16 giugno**.
 

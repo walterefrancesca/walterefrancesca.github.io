@@ -6,14 +6,37 @@ image: assets/images/chiesa_madonna_di_lourdes_bari.jpeg
 nav-menu: true
 ---
 
-La cerimonia si terrà presso la Chiesa Madonna di Lourdes Bari:
+La cerimonia si terrà presso
+
+<div class="table-wrapper">
+  <h4>Chiesa Madonna di Lourdes, Bari</h4>
+  <table class="alt">
+  		<tbody>
+  			<tr>
+  				<td>Indirizzo</td>
+  				<td>Via Madonna di Lourdes, 25, 70016 Parco Scizzo-parchitello BA</td>
+  			</tr>
+  			<tr>
+  				<td>Appuntamento</td>
+  				<td><b>Sabato 22 luglio ore 10:30</b></td>
+  			</tr>
+  			<tr>
+  				<td>Link Navigatore</td>
+  				<td><a href="https://goo.gl/maps/r5xHGdJdSHPXn99r9" target=_blank>Chiesa Madonna di Lourdes Bari - indicazioni stradali con Google Maps</a></td>
+  			</tr>
+  		</tbody>
+  	</table>
+</div>
+
+<!--
+la Chiesa Madonna di Lourdes Bari:
 
 Indirizzo: Via Madonna di Lourdes, 25, 70016 Parco Scizzo-parchitello BA
 
 Appuntamento: Sabato 22 luglio ore 10:30
 
 
-[Chiesa Madonna di Lourdes Bari - indicazioni stradali con Google Maps](https://goo.gl/maps/r5xHGdJdSHPXn99r9)
+[Chiesa Madonna di Lourdes Bari - indicazioni stradali con Google Maps](https://goo.gl/maps/r5xHGdJdSHPXn99r9)-->
 
 
 
