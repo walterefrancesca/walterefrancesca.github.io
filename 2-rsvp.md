@@ -198,7 +198,7 @@ Ti chiediamo di confermare la tua presenza **non oltre sabato 16 giugno**.
 
     <!-- Break -->
     <div class="4u 12u$(small)" style="margin-bottom:1em;">
-      <label for="entry.288620566">In quanti non mangiano?</label>
+      <label for="entry.288620566">In quanti non mangiano? (bebè per contare i posti a tavola)</label>
       <input type="radio" id="nonmangiano-0" name="entry.288620566" checked value=0>
       <label for="nonmangiano-0">0</label>
       <input type="radio" id="nonmangiano-1" name="entry.288620566" value=1>
