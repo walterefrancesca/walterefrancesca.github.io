@@ -129,11 +129,11 @@ document.getElementById("add_message").innerHTML =
     }
     myFunction();
     if (choice === 'viaggio') {
-      document.getElementById("bnk_text").textContent = 'Matrimonio di Walter e Francesca - Contributo Viaggio di Nozze';
+      document.getElementById("bnk_text").textContent = 'Regalo per il Matrimonio di Walter e Francesca - Contributo Viaggio di Nozze';
     } else if (choice === 'casa') {
-      document.getElementById("bnk_text").textContent = 'Matrimonio di Walter e Francesca - Contributo per la Casa';
+      document.getElementById("bnk_text").textContent = 'Regalo per il Matrimonio di Walter e Francesca - Contributo per la Casa';
     } else if (choice === 'idea') {
-      document.getElementById("bnk_text").textContent = 'Matrimonio di Walter e Francesca - Contributo per ...';
+      document.getElementById("bnk_text").textContent = 'Regalo per il Matrimonio di Walter e Francesca - Contributo per ...';
     } else {
       document.getElementById("bnk_text").textContent = 'Regalo per il Matrimonio di Walter e Francesca';
     }
